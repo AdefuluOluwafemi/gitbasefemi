@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changes from Mike</title>
+    <title>SH FORM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h3>Fill Form Properly</h3>
+    <div class="sform">
+        <form  name="myForm" action="PHP.php" method="post" onsubmit="return ajaxpost();">
+           
+         <div class="form-group">
+            <fieldset >
+                <legend>
+                   Simple Form 
+                </legend>
+                <label for="fname">First Name:*</label>
+                <br>
+                <input type="text" id="fname" name="fname" required>
+                <br> <p></p>
+
+                <label for="lname">Last Name:*</label>
+                <br>
+                <input type="text" id="lname" name="lname" required>
+                <br><p></p>
+
+                <label for="email">Email:*</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <br><p></p>
+                
+                <label for="number">Phone Number:*</label>
+                <br>
+                <input type="number" id="number" name="number" placeholder="+234" required>
+                <br><p></p>
+
+                <p>Gender</p>
+                <label for="gender">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+              
+                <label for="gender">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <br><p></p>
+
+                <label for="password">Password:*</label>
+                <br>
+                <input type="password" id="password" name="password" required>
+                <br><p></p>
+<center>
+                <input type="submit" value="Submit" id="button">`
+
+            <p>* Required field</p>
+            </center>
+         </fieldset>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+  
 </body>
 </html>

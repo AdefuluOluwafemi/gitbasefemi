@@ -1,0 +1,62 @@
+.sform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+form{
+    border: 3px solid rgb(250, 250, 250);
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]{
+    border-radius:20px;
+    0%width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
+.form-group{
+    background-color: rgb(114, 77, 182);
+
+
+height: auto;
+width: auto;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+}
+ 
+
+
+body{
+    background-color: #3f303d;
+    width: auto;
+    height: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+  }
+
