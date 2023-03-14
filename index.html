@@ -6,9 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SH FORM</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .sform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+form{
+    border: 3px solid rgb(250, 250, 250);
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]{
+    border-radius:20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+  button {
+    background-color: #04AA6D;
+    border-radius: 50px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
+.form-group{
+    background-color: rgb(95, 78, 126);
+
+
+height: auto;
+width: auto;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+}
+ 
+
+
+body{
+    background-color: #5c4f5a;
+    width: auto;
+    height: auto;
+}
+
+button:hover {
+    opacity: 5;
+  }
+    </style>
 </head>
 <body>
-    <h3>Fill Form Properly</h3>
+    <center>
+        <h2 style="font-style: italic;">REGISTRATION FORM</h2>
+        <h4>Fill The Form Properly.</h4>
+    </center>
+   
     <div class="sform">
         <form  name="myForm" action="PHP.php" method="post" onsubmit="return ajaxpost();">
            
@@ -20,7 +83,7 @@
                 <label for="fname">First Name:*</label>
                 <br>
                 <input type="text" id="fname" name="fname" required>
-                <br> <p></p>
+            
 
                 <label for="lname">Last Name:*</label>
                 <br>
@@ -56,6 +119,27 @@
             </center>
          </fieldset>
             </div>
+<script>
+      function ajaxpost(){
+    var data = new FormData();
+  data.append("fname",document.getElementById("fname").value);
+  data.append("lname",document.getElementById("lname").value);
+  data.append("number",document.getElementById("number").value);
+  data.append("email",document.getElementById("email").value);
+    var xhr = new XMLHttpRequest();
+ 
+    xhr.open("POST","PHP.php");
+    xhr.onload = function() {
+        
+        alert(this.response);
+    };
+    xhr.send(data);
+
+    return false;
+  }
+ 
+</script>
+
         </form>
     </div>
     <script src="script.js"></script>
