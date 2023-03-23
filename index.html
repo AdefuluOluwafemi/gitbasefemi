@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideHustle@Dave</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+</head>
+<body>
+    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="sidelogo.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars-progress" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1> An online based training site for people to learn essential skills. </h1>
+                <p style="font-size: 12px; font-weight: bold;">We offer several courses, We will be happy for you to join us.
+                </p> <br><p></p> <br>
+                <p></p>
+                <a href="" class="hero-btn">Visit us to know more</a>
+            </div>
+
+        </section>
+    
+    <!--------Course---------->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We Offer the Best,select a course & come learn with us.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Product Design</h3>
+                <p>We offer a wide range of quality product design courses with approvment from the national council....we provide educational support needed for intermidiate students as they are equiped with everthing required for the courses being taken.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Web Design</h3>
+                <p>We offer a wide range of quality Web courses with approvment from the national council....we provide educational support needed for undergraduate students as they are equiped with everthing required for the courses being taken.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Communication Skills</h3>
+                <p>We offer a wide range of quality Communication courses with approvment from the national council....we provide educational support needed for postgraduate students as they are equiped with everthing required for the courses being taken.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="sform">
+            <form id="myForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <fieldset >
+                    <legend style="font-style: italic;">
+                       Subcribe to get more Info....
+                    </legend>
+                    <label for="fname">First Name:*</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" required>
+                <br><p></p>
+    
+                    <label for="lname">Last Name:*</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" required>
+                    <br><p></p>
+    
+                    <label for="email">Email:*</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <br><p></p>
+                    
+                    <label for="number">Phone Number:*</label>
+                    <br>
+                    <input type="number" id="number" name="number" placeholder="+234" required>
+                    <br><p></p>
+                 <center>
+                    <input type="submit" value="Submit" id="button">`
+    
+                    <p>* Required field</p>
+                </center>
+             </fieldset>
+                </div>
+    </section>
+      <!--Call To Action-->
+
+      <section class="cta">
+        <h1>Enroll for our various courses anywhere from the World.</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+
+    </section>
+
+    <!--footer-->
+
+    <section class="footer">
+        <h2>About Us</h2>
+        <p>We are a world leading organization dedicated to impacting in lifes in order to ensure high education standards<br> we are proud of our dynamic system, We have top facilities to faliciliate education services.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p>Made <i class="fa fa-heart-o"></i>by Dave</p>
+
+
+<!--Javascript for toggle menu & Validation-->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu() {
+        navlinks.style.right = "0";
+    }
+
+    function hidemenu() {
+        navlinks.style.right = "-200px";
+    }
+
+    function validateForm() {
+      var form = document.getElementById("myForm");
+      var fname = form["fname"].value
+      var lname = form["lname"].value;
+      var email = form["email"].value;
+      var number = form["number"].value;
+      
+      if (fname ==="" || lname === "" || email === "" || number === "") {
+        alert("Please fill out all fields.");
+        return false;
+      }
+      
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+      
+      alert("Subscribed Successfully!");
+      return true;
+    }
+    
+    function validateEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+</script>
+   </body>
+</html>
