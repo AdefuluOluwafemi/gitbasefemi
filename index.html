@@ -12,7 +12,7 @@
     
         <section class="header">
             <nav>
-               <a href="index.html"><img src="sidelogo.png"></a>
+                <a href="index.html"><img src="sidelogo.png"></a>
                 <div class="nav-links" id="navlinks">
                     <i class="fa fa-close" onclick="hidemenu()"></i>
                     <ul>
@@ -104,8 +104,10 @@
     <!--footer-->
 
     <section class="footer">
+        <center>
         <h2>About Us</h2>
-        <p>We are a world leading organization dedicated to impacting in lifes in order to ensure high education standards<br> we are proud of our dynamic system, We have top facilities to faliciliate education services.</p>
+        <p>We are an organization dedicated to impacting in lifes in order to ensure high education standards<br> we are proud of our dynamic system, We have top facilities to faliciliate education services.</p>
+        </center>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>
@@ -122,10 +124,12 @@
     var navlinks = document.getElementById("navlinks");
 
     function showmenu() {
+       
         navlinks.style.right = "0";
     }
 
     function hidemenu() {
+        document.getElementById("navlinks").style.width = "-200px";
         navlinks.style.right = "-200px";
     }
 

@@ -1,4 +1,5 @@
 * {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -188,7 +189,7 @@ nav .fa {
     
     input[type=text], input[type=password], input[type=email], input[type=number]{
     border-radius:20px;
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -212,7 +213,7 @@ nav .fa {
     .form-group{
     background-color: rgb(145, 218, 148);
     height: auto;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -293,8 +294,10 @@ nav .fa {
             position: absolute;
             background: rgb(79, 243, 115);
             height: 100%;
-            width: 200px;
+            width: -200px;
             top: 0;
+            right: 0;
+            bottom: 0;
             right: -200px;
             text-align: left;
             z-index: 2;
