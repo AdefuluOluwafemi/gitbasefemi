@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-image: url("Sidehustle.jpg"), linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-image: url("Sidehustle.jpg"),linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     min-height: 100vh;
     width: 100%;
     background-position: center;
@@ -26,6 +26,7 @@ nav img {
 }
 
 .nav-links {
+    overflow: hidden;
     flex: 1;
     text-align: right;
 }
@@ -81,7 +82,7 @@ nav img {
 .text-box {
     margin: 10px 0 40px;
     font-size: 14px;
-    color: rgb(83, 75, 75);
+    color: rgb(37, 32, 32);
 }
 
 .hero-btn {
@@ -178,7 +179,11 @@ nav .fa {
     }
     
     form{
-    border: 3px solid rgb(138, 134, 134);
+    border: 3px solid rgb(29, 228, 55);
+    }
+
+    label{
+        font-family:roboto;
     }
     
     input[type=text], input[type=password], input[type=email], input[type=number]{
@@ -192,7 +197,7 @@ nav .fa {
     }
     
     input[type="submit"] {
-        background-color: #4CAF50;
+        background-color: #9de09f;
         border-radius: 50px;
         color: white;
         font-weight: bold;
@@ -205,7 +210,7 @@ nav .fa {
     
     
     .form-group{
-    background-color: rgba(89, 85, 95, 0.212);
+    background-color: rgb(145, 218, 148);
     height: auto;
     width: 100%;
     padding: 10px;
@@ -273,21 +278,21 @@ nav .fa {
     /* Media */
 
     @media(max-width: 600px) {
-        .text-box h1 {
+
+   .text-box h1 {
             font: 20px;
         }
+     
         .nav-links ul li {
             line-height:100%;
             display: block;
             border: 1px solid rgb(71, 66, 66);
             border-style:hidden;
-            border-radius: 10px;
-            border-bottom: none;
         }
         .nav-links {
             position: absolute;
             background: rgb(79, 243, 115);
-            height: 100vh;
+            height: 100%;
             width: 200px;
             top: 0;
             right: -200px;
@@ -322,9 +327,14 @@ nav .fa {
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media(max-width: 600px) {
         .cta h1 {
             font-size: 21px;
         }
     }
 
+     @media(max-width:600px) {
+    .footer  {
+        padding: 10;
+    }
+}

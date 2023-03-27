@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SideHustle@Dave</title>
     <link rel="stylesheet" href="style3.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
         <section class="header">
             <nav>
-                <a href="index.html"><img src="sidelogo.png"></a>
+               <a href="index.html"><img src="sidelogo.png"></a>
                 <div class="nav-links" id="navlinks">
-                    <i class="fa fa-xmark" onclick="hidemenu()"></i>
+                    <i class="fa fa-close" onclick="hidemenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
                         <li><a href="">COURSE</a></li>
                         <li><a href="">CONTACT</a></li>
-                    </ul>
+                    </ul> 
                 </div>
-                <i class="fa fa-bars-progress" onclick="showmenu()"></i>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
             </nav>
 
             <div class="text-box">
@@ -36,8 +35,6 @@
 
         </section>
     
-    <!--------Course---------->
-
     <section class="course">
         <h1>Courses We Offer</h1>
         <p>We Offer the Best,select a course & come learn with us.</p>
@@ -60,13 +57,13 @@
             </div>
         </div>
     </section>
-
+<br><br><br>
     <section>
         <div class="sform">
             <form id="myForm" onsubmit="return validateForm()">
             <div class="form-group">
                 <fieldset >
-                    <legend style="font-style: italic;">
+                    <legend style="font-family: cursive;">
                        Subcribe to get more Info....
                     </legend>
                     <label for="fname">First Name:*</label>
@@ -117,7 +114,7 @@
             <i class="fa fa-linkedin"></i>
         </div>
 
-        <p>Made <i class="fa fa-heart-o"></i>by Dave</p>
+        <p>Made by Dave</p>
 
 
 <!--Javascript for toggle menu & Validation-->
