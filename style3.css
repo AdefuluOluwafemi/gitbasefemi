@@ -181,15 +181,21 @@ nav .fa {
     
     form{
     border: 3px solid rgb(29, 228, 55);
-    }
+    width: 60%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 
     label{
-        font-family:roboto;
+        font-family:'Courier New', Courier, monospace;
     }
     
     input[type=text], input[type=password], input[type=email], input[type=number]{
     border-radius:20px;
-    width: 90%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -198,7 +204,7 @@ nav .fa {
     }
     
     input[type="submit"] {
-        background-color: #9de09f;
+        background-color: #adebaf;
         border-radius: 50px;
         color: white;
         font-weight: bold;
@@ -245,10 +251,12 @@ nav .fa {
     
     .cta h1 {
         font-weight:bold;
-        color: grey;
+        color: rgb(231, 94, 94);
         margin-bottom: 40px;
         padding: 0;
     }
+
+    
 
     .footer {
         width: 100%;
