@@ -189,7 +189,7 @@ nav .fa {
     
     input[type=text], input[type=password], input[type=email], input[type=number]{
     border-radius:20px;
-    width: 80%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -244,6 +244,7 @@ nav .fa {
     }
     
     .cta h1 {
+        font-weight:bold;
         color: grey;
         margin-bottom: 40px;
         padding: 0;
