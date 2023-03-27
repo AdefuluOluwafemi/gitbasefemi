@@ -189,7 +189,7 @@ nav .fa {
     
     input[type=text], input[type=password], input[type=email], input[type=number]{
     border-radius:20px;
-    width: 90%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -213,7 +213,7 @@ nav .fa {
     .form-group{
     background-color: rgb(145, 218, 148);
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
