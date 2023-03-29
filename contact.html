@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="header2">
+    
         <nav>
             <a href="index.html"><img src="sidelogo.png"></a>
             <div class="nav-links" id="navlinks">
@@ -23,11 +23,17 @@
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-<br><br><br> <br><br><br>
-        <div class="text-box">
-            <h1 style="background-color:rgb(131, 199, 131)"> CONTACT US </h1>
-        </div>
-    </section>
+        <br><br><br>
+
+    
+        <center>
+            <section class="header2"> 
+    <div class="text-box2">
+        <h1 style="background-color:rgb(131, 199, 131)"> CONTACT US </h1>
+    </div>
+</section>
+       </center>
+    
 
     <section class="form">
         <div class="sform">
@@ -102,5 +108,46 @@
         <p>Made by Dave</p>
         </div>
     </section>
+
+    <!--Javascript for toggle menu & Validation-->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu() {
+       
+        navlinks.style.right = "0";
+    }
+
+    function hidemenu() {
+        document.getElementById("navlinks").style.width = "-200px";
+        navlinks.style.right = "-200px";
+    }
+
+    function validateForm() {
+      var form = document.getElementById("myForm");
+      var fname = form["fname"].value
+      var lname = form["lname"].value;
+      var email = form["email"].value;
+      var number = form["number"].value;
+      
+      if (fname ==="" || lname === "" || email === "" || number === "") {
+        alert("Please fill out all fields.");
+        return false;
+      }
+      
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+      
+      alert("Subscribed Successfully!");
+      return true;
+    }
+    
+    function validateEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+</script>
 </body>
 </html>

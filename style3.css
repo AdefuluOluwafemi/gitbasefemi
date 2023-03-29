@@ -21,6 +21,30 @@
     position: relative;
 }
 
+.text-box2 {
+    width: 30%;
+    color: rgb(59, 55, 55);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box2 h1 {
+    font: size 62px;
+}
+
+.text-box2 {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(37, 32, 32);
+}
+
 .form{
     background-image: url("Sidehustle.jpg"),linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     background-position: center;
