@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="contain">
+    
+<section class="header2">
+   
         <nav>
             <a href="index.html"><img src="sidelogo.png"></a>
             <div class="nav-links" id="navlinks">
@@ -23,25 +25,23 @@
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-        <br><br><br>
+        <hr>
+        <br>
 
-    
-        <center>
-            <section class="header2"> 
-    <div class="text-box2">
-        <h1 style="background-color:rgb(131, 199, 131)"> CONTACT US </h1>
-    </div>
-</section>
-       </center>
-    
-
-    <section class="form">
         <div class="sform">
+           <h1> 
+                                       Contact Us                                     
+            <br>
+           
+           </h1>
+            
+            <br>
+            
             <form id="myForm" onsubmit="return validateForm()">
             <div class="form-group">
                 <fieldset >
                     <legend style="font-family: cursive;">
-                        Contact Us
+                        Fill in details 
                     </legend>
                     <label for="fname">Full Name:*</label>
                     <br>
@@ -55,7 +55,7 @@
                     
                     <label for="course">Course</label>
                     <br>
-                          <select id="course">
+                          <select id="course" name="course">
                             <option value="pd">Product Design</option>
                             <option value="wb">Web Design</option>
                             <option value="com">Communication</option>
@@ -63,7 +63,7 @@
 
                            <br>  <br> <label for="message">MESSAGE FOR US:</label>
                      <br>
-                          <textarea id="message" placeholder="Type Here.." style="height:100px"></textarea>
+                          <textarea id="message" name="message" placeholder="Type Here.." style="height:100px"></textarea>
                   
                 
                  <center>
@@ -74,9 +74,7 @@
              </fieldset>
                 </div>
     </section>
-    
 
-    <br>
     <section class="footer">
         <div id="footer">
         <center>
@@ -108,7 +106,7 @@
         <p>Made by Dave</p>
         </div>
     </section>
-</div>
+
 
 
     <!--Javascript for toggle menu & Validation-->
@@ -128,11 +126,11 @@
     function validateForm() {
       var form = document.getElementById("myForm");
       var fname = form["fname"].value
-      var lname = form["lname"].value;
       var email = form["email"].value;
-      var number = form["number"].value;
+      var course = form["course"].value;
+      var message= form["messagw"].value;
       
-      if (fname ==="" || lname === "" || email === "" || number === "") {
+      if (fname ==="" || email === "" || course === "" || message === "") {
         alert("Please fill out all fields.");
         return false;
       }
@@ -142,7 +140,7 @@
         return false;
       }
       
-      alert("Subscribed Successfully!");
+      alert("Thanks For Reaching Out! Our agent will contact You.");
       return true;
     }
     
@@ -151,5 +149,6 @@
       return re.test(email);
     }
 </script>
+
 </body>
 </html>
