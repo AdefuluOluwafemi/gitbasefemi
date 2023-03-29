@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaveSideHustle</title>
+    <link rel="stylesheet" href="style3.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header2">
+        <nav>
+            <a href="index.html"><img src="sidelogo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-close" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="index.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+<br><br><br> <br><br><br>
+        <div class="text-box">
+            <h1 style="background-color:rgb(131, 199, 131)"> CONTACT US </h1>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="sform">
+            <form id="myForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <fieldset >
+                    <legend style="font-family: cursive;">
+                        Contact Us
+                    </legend>
+                    <label for="fname">Full Name:*</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" required>
+                  <br><p></p>
+    
+                 <label for="email">Email:*</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="abc@email.com" required>
+                    <br><p></p>
+                    
+                    <label for="course">Course</label>
+                    <br>
+                          <select id="course">
+                            <option value="pd">Product Design</option>
+                            <option value="wb">Web Design</option>
+                            <option value="com">Communication</option>
+                          </select>
+
+                           <br>  <br> <label for="message">MESSAGE FOR US:</label>
+                     <br>
+                          <textarea id="message" placeholder="Type Here.." style="height:100px"></textarea>
+                  
+                
+                 <center>
+                    <input type="submit" value="Submit" id="button">
+    
+                    <p>* Required field</p>
+                </center>
+             </fieldset>
+                </div>
+    </section>
+    
+
+    <br>
+    <section class="footer">
+        <div id="footer">
+        <center>
+        <h2>Contact Info</h2>
+        </center>
+
+        <ul>
+            <li><i class="fa fa-map-marker"></i> Head Office: Lekki, Lagos,Nigeria.<br> Branch: Gwagwalada, Abuja.</li>
+            <br>
+            <li><i class="fa fa-envelope"></i> Email: <a href="mailto:sidehustle@gmail.com">sidehustle@gmail.com</a></li>
+            <br>
+            <li><i class="	fa fa-phone"></i> +2341234567890</li>
+        </ul>
+
+        <div class="icons">
+            <a class="icon" target="_blank" href="http://www.facebook.com/" title="DaveSideHustle on Facebook">
+            <i class="fa fa-facebook"></i> </a>
+
+            <a class="icon" target="_blank" href="http://www.instagram.com/" title="DaveSideHustle on Instagram">
+            <i class="fa fa-instagram"></i></a>
+
+            <a class="icon" target="_blank" href="http://www.twitter.com/" title="DaveSideHustle on Twitter">
+            <i class="fa fa-twitter"></i></a>
+
+            <a class="icon" target="_blank" href="http://www.linkedin.com/" title="DaveSideHustle on Linkedin">
+            <i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <p>Made by Dave</p>
+        </div>
+    </section>
+</body>
+</html>

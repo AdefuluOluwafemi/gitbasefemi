@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SideHustle@Dave</title>
+    <title>DaveSideHustle</title>
     <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,10 +16,10 @@
                 <div class="nav-links" id="navlinks">
                     <i class="fa fa-close" onclick="hidemenu()"></i>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">COURSE</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#footer">ABOUT</a></li>
+                        <li><a href="#course">COURSE</a></li>
+                        <li><a href="#cta">CONTACT</a></li>
                     </ul> 
                 </div>
                 <i class="fa fa-bars" onclick="showmenu()"></i>
@@ -30,12 +30,13 @@
                 <p style="font-size: 12px; font-weight: bold;">We offer several courses, We will be happy for you to join us.
                 </p> <br><p></p> <br>
                 <p></p>
-                <a href="" class="hero-btn">Visit us to know more</a>
+                <a href="#course" class="hero-btn">Check Available Courses</a>
             </div>
 
         </section>
     
     <section class="course">
+        <div id="course">
         <h1>Courses We Offer</h1>
         <p>We Offer the Best,select a course & come learn with us.</p>
 
@@ -56,6 +57,7 @@
                 </p>
             </div>
         </div>
+    </div>
     </section>
 <br><br><br>
     <section>
@@ -95,33 +97,43 @@
     </section>
       <!--Call To Action-->
 
+      <div id="cta">
       <section class="cta">
-        <div class="bg-image"></div>
-        
-        <div class="bg-text">
+         <div class="bg-text">
         <h1><strong>Enroll for our various courses anywhere from the World.</strong></h1>
-        <a href="" class="hero-btn">CONTACT US</a>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
         </div>
-
+        </div>
     </section>
 
     <!--footer-->
-
+ 
     <section class="footer">
+        <div id="footer">
         <center>
         <h2>About Us</h2>
-        <p>We are an organization dedicated to impacting in lifes in order to ensure high education standards<br> we are proud of our dynamic system, We have top facilities to faliciliate education services.</p>
+        <p>We are an organization dedicated to impacting in lifes in order to ensure high education standards<br> we are proud of our 
+            dynamic system, We have top facilities to faliciliate education services.<br> We train people to improve their 
+            skills and develop personal interest in theie line of interest. We engage our trainees virtually through stress free oriented timing 
+            which is comfortable to fit in their schedule. We are the organisation that put your interest first.<br><br><strong>Follow our Socials</strong> </p>
         </center>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-snapchat"></i>
-            <i class="fa fa-linkedin"></i>
+            <a class="icon" target="_blank" href="http://www.facebook.com/" title="DaveSideHustle on Facebook">
+            <i class="fa fa-facebook"></i> </a>
+
+            <a class="icon" target="_blank" href="http://www.instagram.com/" title="DaveSideHustle on Instagram">
+            <i class="fa fa-instagram"></i></a>
+
+            <a class="icon" target="_blank" href="http://www.twitter.com/" title="DaveSideHustle on Twitter">
+            <i class="fa fa-twitter"></i></a>
+
+            <a class="icon" target="_blank" href="http://www.linkedin.com/" title="DaveSideHustle on Linkedin">
+            <i class="fa fa-linkedin"></i></a>
         </div>
 
         <p>Made by Dave</p>
-
+        </div>
+    </section>
 
 <!--Javascript for toggle menu & Validation-->
 <script>
